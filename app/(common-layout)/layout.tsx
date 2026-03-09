@@ -1,0 +1,16 @@
+import Footer from "@/components/home3/Footer";
+import Navbar from "@/components/shared/Navbar";
+
+export default function CommonLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
+}
