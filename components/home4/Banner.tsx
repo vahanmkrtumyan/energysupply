@@ -40,12 +40,12 @@ const Banner = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-12">
-                    <h2 className="heading-4 order-2 order-md-1 fade_up_anim">Water Energy</h2>
+                    <h2 className="heading-4 order-2 order-md-1 fade_up_anim">Էներջի Սփփլայ</h2>
                   </div>
                   <div className="col-12">
-                    <h2 className="subheading-4 fade_up_anim fw-normal" data-delay=".3">
-                      Solutions
-                    </h2>
+                    <p className="subheading-4 fade_up_anim fw-normal" data-delay=".3">
+                      Առաջատար էլեկտրաէներգիայի մատակարար ազատականացված շուկայում
+                    </p>
                   </div>
                 </div>
               </div>

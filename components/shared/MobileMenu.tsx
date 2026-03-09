@@ -40,7 +40,7 @@ const MobileMenu = ({ mobileMenu, setMobileMenu }: Props) => {
                     </span>
                     <AnimateHeight className="w-100" height={id == open ? "auto" : 0}>
                       <ul className={`submenu-dropdown`}>
-                        {submenus.map(({ id, title, link }) => (
+                        {submenus?.map(({ id, title, link }) => (
                           <li key={id}>
                             <Link className={`${link == path ? "active" : ""}`} onClick={() => setMobileMenu(false)} href={link}>
                               {title}

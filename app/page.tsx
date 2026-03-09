@@ -1,27 +1,29 @@
-import About from "@/components/home1/About";
-import Banner from "@/components/home1/Banner";
-import Experts from "@/components/home1/Experts";
-import Faq from "@/components/home1/Faq";
-import Footer from "@/components/home1/Footer";
-import RecentProject from "@/components/home1/RecentProject";
-import Services from "@/components/home1/Services";
-import Testimonial from "@/components/home1/Testimonial";
-import WhyChoose from "@/components/home1/WhyChoose";
+import Specialist from "@/components/home2/Specialist";
+import Banner from "@/components/home4/Banner";
+import Counter from "@/components/home4/Counter";
+import Faq from "@/components/home4/Faq";
+import Footer from "@/components/home4/Footer";
+import News from "@/components/home4/News";
+import ProjectShowcase from "@/components/home4/ProjectShowcase";
+import Services from "@/components/home4/Services";
+import Testimonial from "@/components/home4/Testimonial";
 import Navbar from "@/components/shared/Navbar";
 
-export default function Home() {
+const HomeFour = () => {
   return (
     <>
       <Navbar />
       <Banner />
-      <About />
       <Services />
-      <WhyChoose />
-      <RecentProject />
-      <Experts />
+      <Counter />
+      <ProjectShowcase />
       <Testimonial />
+      <Specialist />
       <Faq />
+      <News />
       <Footer />
     </>
   );
-}
+};
+
+export default HomeFour;

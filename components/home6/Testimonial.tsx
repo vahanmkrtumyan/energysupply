@@ -6,7 +6,6 @@ import quote from "@/public/images/quote-2.png";
 import testimonialBg6 from "@/public/images/testimonial-bg-6.webp";
 import Image from "next/image";
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const Testimonial = () => {
@@ -102,7 +101,6 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <ModalVideo channel="youtube" youtube={{ mute: 0, autoplay: 0 }} isOpen={open} videoId="pBFQdxA-apI" onClose={() => setOpen(false)} />
     </section>
   );
 };

@@ -1,52 +1,9 @@
-import home1 from "@/public/images/home-1.png";
-import home2 from "@/public/images/home-2.png";
-import home3 from "@/public/images/home-3.png";
-import home4 from "@/public/images/home-4.png";
-import home5 from "@/public/images/home-5.png";
-import home6 from "@/public/images/home-6.png";
+
 const navbarData = [
   {
     id: 1,
     title: "Home",
-    submenus: [
-      {
-        id: 1.1,
-        title: "Solar Solution",
-        link: "/",
-        img: home1,
-      },
-      {
-        id: 1.2,
-        title: "Solar Company",
-        link: "/home-two/",
-        img: home2,
-      },
-      {
-        id: 1.3,
-        title: "Wind Energy",
-        link: "/home-three/",
-        img: home3,
-      },
-      {
-        id: 1.4,
-        title: "Hydropower",
-        link: "/home-four/",
-        img: home4,
-      },
-      {
-        id: 1.5,
-        title: "Online Shop",
-        link: "/home-five/",
-        img: home5,
-      },
-      {
-        id: 1.6,
-        title: "Video Background",
-        link: "/home-six/",
-        img: home6,
-      },
-    ],
-    type: "megamenu",
+    link: "/",
   },
   {
     id: 2,

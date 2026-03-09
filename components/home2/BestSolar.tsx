@@ -4,7 +4,6 @@ import bestSolar from "@/public/images/best-solar.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
 const BestSolar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -50,7 +49,6 @@ const BestSolar = () => {
           </div>
         </div>
       </div>
-      <ModalVideo channel="youtube" youtube={{ mute: 0, autoplay: 0 }} isOpen={open} videoId="pBFQdxA-apI" onClose={() => setOpen(false)} />
     </section>
   );
 };
