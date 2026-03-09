@@ -11,7 +11,7 @@ const NotFound = () => {
             <h2 className="fade_up_anim">Oops! Page Not Found</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <Link href="/" className="outline-btn">
-              Back To Home
+              Վերադառնալ գլխավոր էջ
             </Link>
           </div>
         </div>

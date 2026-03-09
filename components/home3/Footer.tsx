@@ -61,7 +61,7 @@ const Footer = () => {
                     <h4 className="mb-4">Quick Link</h4>
                     <ul className="navigation-links">
                       <li>
-                        <Link href="/"> Home</Link>
+                        <Link href="/"> Գլխավոր</Link>
                       </li>
                       <li>
                         <Link href="/about-us"> About Us</Link>

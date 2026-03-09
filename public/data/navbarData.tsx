@@ -2,7 +2,7 @@
 const navbarData = [
   {
     id: 1,
-    title: "Home",
+    title: "Գլխավոր",
     link: "/",
   },
   {

@@ -12,7 +12,7 @@ const Banner = () => {
             <ul className="list-unstyled d-flex align-items-center gap-2 fade_up_anim" data-delay=".3">
               <li>
                 <Link href="/" className="text-white">
-                  Home
+                  Գլխավոր
                 </Link>
               </li>
               <li>

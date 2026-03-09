@@ -16,7 +16,7 @@ const Banner = ({ bgImage, title }: Props) => {
             <ul className="list-unstyled d-flex justify-content-center align-items-center gap-2 fade_up_anim mb-0" data-delay=".3">
               <li>
                 <Link href="/" className="text-white">
-                  Home
+                  Գլխավոր
                 </Link>
               </li>
               <li>
