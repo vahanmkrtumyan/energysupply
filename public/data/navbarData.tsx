@@ -7,12 +7,12 @@ const navbarData = [
   },
   {
     id: 2,
-    title: "About",
+    title: "Մեր մասին",
     link: "/about-us/",
   },
   {
     id: 3,
-    title: "Service",
+    title: "Ծառայություններ",
     submenus: [
       {
         id: 3.1,
@@ -26,63 +26,63 @@ const navbarData = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "Blog",
-    submenus: [
-      {
-        id: 4.1,
-        title: "Blog Standard",
-        link: "/blogs/",
-      },
-      {
-        id: 4.2,
-        title: "Blog Grid",
-        link: "/blog-grid/",
-      },
-      {
-        id: 4.3,
-        title: "Blog List",
-        link: "/blog-list/",
-      },
-      {
-        id: 4.4,
-        title: "Blog Details",
-        link: "/blogs/1/",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Shop",
-    submenus: [
-      {
-        id: 5.1,
-        title: "Products",
-        link: "/products/",
-      },
-      {
-        id: 5.2,
-        title: "Product Details",
-        link: "/products/1/",
-      },
-      {
-        id: 5.3,
-        title: "Cart",
-        link: "/cart/",
-      },
-      {
-        id: 5.4,
-        title: "Billing",
-        link: "/billing/",
-      },
-      {
-        id: 5.5,
-        title: "Payment",
-        link: "/payment/",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Blog",
+  //   submenus: [
+  //     {
+  //       id: 4.1,
+  //       title: "Blog Standard",
+  //       link: "/blogs/",
+  //     },
+  //     {
+  //       id: 4.2,
+  //       title: "Blog Grid",
+  //       link: "/blog-grid/",
+  //     },
+  //     {
+  //       id: 4.3,
+  //       title: "Blog List",
+  //       link: "/blog-list/",
+  //     },
+  //     {
+  //       id: 4.4,
+  //       title: "Blog Details",
+  //       link: "/blogs/1/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Shop",
+  //   submenus: [
+  //     {
+  //       id: 5.1,
+  //       title: "Products",
+  //       link: "/products/",
+  //     },
+  //     {
+  //       id: 5.2,
+  //       title: "Product Details",
+  //       link: "/products/1/",
+  //     },
+  //     {
+  //       id: 5.3,
+  //       title: "Cart",
+  //       link: "/cart/",
+  //     },
+  //     {
+  //       id: 5.4,
+  //       title: "Billing",
+  //       link: "/billing/",
+  //     },
+  //     {
+  //       id: 5.5,
+  //       title: "Payment",
+  //       link: "/payment/",
+  //     },
+  //   ],
+  // },
   {
     id: 6,
     title: "Pages",
