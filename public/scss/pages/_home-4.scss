@@ -407,6 +407,27 @@
   }
 }
 
+.our-position {
+  background-color: $n0;
+  background-image: url(/images/testimonial-bg-4.webp);
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative;
+  .content{
+    background-color: $n0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (min-width:1200px){
+      padding-left: 50px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      padding-left: 100px;
+    }    
+    position: relative;
+    border: 1px solid $n30;
+  }
+}
+
 // footer four
 .footer-four {
   background-color: $bg2;

@@ -8,7 +8,7 @@ const navbarData = [
   {
     id: 2,
     title: "Մեր մասին",
-    link: "/about-us/",
+    link: "/#about",
   },
   {
     id: 3,

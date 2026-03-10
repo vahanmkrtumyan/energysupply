@@ -79,22 +79,9 @@
       padding: 24px;
     }
     @include screen(lg) {
-      padding: 32px;
+      padding: 64px 32px;
     }
     background-color: $n0;
     text-align: center;
-    i {
-      padding: 20px;
-      background-color: $bg1;
-      font-size: 2.5rem;
-      display: inline-flex;
-      margin-bottom: 28px;
-      font-weight: 200 !important;
-    }
-    a,
-    span {
-      line-height: 130% !important;
-      color: $bg2;
-    }
   }
 }
