@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="col-md-6 col-xl-4">
               <div className="footer-card">
                 <Link href="/">
-                  <Image src={logo} className="img-fluid mb-4" alt="" />
+                  <Image src={logo} className="img-fluid mb-4" alt="" height={80}/>
                 </Link>
                 <p className="mb-4 pb-lg-3 text-white">Ձեր էներգետիկ ծախսերի օպտիմալացումը սկսվում է ճիշտ մատակարարից</p>
               

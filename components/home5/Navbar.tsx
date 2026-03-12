@@ -36,30 +36,12 @@ const Navbar = () => {
               </Link>
               {/* <!-- menu --> */}
               <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
-                {navbarData.map(({ id, title, link, submenus, type }) =>
+                {navbarData.map(({ id, title, link, submenus }) =>
                   link ? (
                     <li key={id}>
                       <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                         {title}
                       </Link>
-                    </li>
-                  ) : type ? (
-                    <li className="submenu mega-menu" key={id}>
-                      <span className={`${isActive(path, submenus) ? "active" : ""}`}>
-                        {title} <i className="ti ti-chevron-down"></i>
-                      </span>
-                      <ul className="submenu-dropdown mega-dropdown">
-                        {submenus.map(({ id, title, link, img }) => (
-                          <li key={id}>
-                            <Link href={link}>
-                              <div className="home-img">
-                                <Image src={img} alt="" />
-                              </div>
-                              <span>{title}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
                     </li>
                   ) : (
                     <li className="submenu" key={id}>
