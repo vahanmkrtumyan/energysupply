@@ -32,7 +32,7 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
         <div className="container g-0 g-lg-1">
           <nav id="navbar-menu" className="d-flex justify-content-between align-items-center position-relative">
             <Link href="/">
-              <Image src={logo || logoWhite} alt="" />
+              <Image src={logo || logoWhite} alt="" height={64}/>
             </Link>
             <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
               {navbarData.map(({ id, title, link, submenus }) =>
