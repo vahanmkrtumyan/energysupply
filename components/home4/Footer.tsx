@@ -7,37 +7,16 @@ const Footer = () => {
       <div className="position-relative overflow-x-hidden">
         <div className="container footer-up">
           <div className="row g-3 g-lg-4">
-            <div className="col-md-6 col-xl-3">
+            <div className="col-md-6 col-xl-4">
               <div className="footer-card">
                 <Link href="/">
                   <Image src={logo} className="img-fluid mb-4" alt="" />
                 </Link>
-                <p className="mb-4 pb-lg-3 text-white">Welcome to Solarox, where legal expertise meets personalized service. We are a team of highly skilled attorneys dedicated to providing</p>
-                <ul className="social-link">
-                  <li>
-                    <a href="#">
-                      <i className="ti ti-brand-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="ti ti-brand-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="ti ti-brand-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="ti ti-brand-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p className="mb-4 pb-lg-3 text-white">Ձեր էներգետիկ ծախսերի օպտիմալացումը սկսվում է ճիշտ մատակարարից</p>
+              
               </div>
             </div>
-            <div className="col-md-6 col-xl-3">
+            <div className="col-md-6 col-xl-4">
               <div className="footer-card">
                 <h3 className="text-white pb-3">Quik Link</h3>
                 <ul className="contact list-unstyled quick-link">
@@ -59,7 +38,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-xl-3">
+            <div className="col-md-6 col-xl-4">
               <div className="footer-card">
                 <h3 className="text-white pb-3">Contact</h3>
                 <ul className="contact">
@@ -100,45 +79,10 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-xl-3">
-              <div className="footer-card">
-                <h3 className="text-white mb-4">Subscribe</h3>
-                <form>
-                  <input type="email" className="ps-2" placeholder="Your Email..." required />
-                  <button>
-                    <i className="ti ti-send"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
+            
           </div>
         </div>
-        <div className="container copyright">
-          <div className="row">
-            <div className="col-12">
-              <div className="footer-card d-flex flex-wrap gap-3 align-items-center justify-content-between px-3">
-                <p className="text-white">
-                  Copyright © <a href="#">Solarox</a> All rights reserved.
-                </p>
-                <ul className="list-unstyled d-flex flex-wrap align-items-center mb-0 ps-0 gap-2">
-                  <li>
-                    <a href="#" className="text-white">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li className="text-primary text-sm d-none d-sm-block">
-                    <i className="ti ti-point-filled"></i>
-                  </li>
-                  <li>
-                    <a href="#" className="text-white">
-                      Terms of Service
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </footer>
   );

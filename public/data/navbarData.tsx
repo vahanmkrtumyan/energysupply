@@ -10,22 +10,22 @@ const navbarData = [
     title: "Մեր մասին",
     link: "/#about",
   },
-  {
-    id: 3,
-    title: "Ծառայություններ",
-    submenus: [
-      {
-        id: 3.1,
-        title: "Services",
-        link: "/services/",
-      },
-      {
-        id: 3.2,
-        title: "Service Details",
-        link: "/services/1/",
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Ծառայություններ",
+  //   submenus: [
+  //     {
+  //       id: 3.1,
+  //       title: "Services",
+  //       link: "/services/",
+  //     },
+  //     {
+  //       id: 3.2,
+  //       title: "Service Details",
+  //       link: "/services/1/",
+  //     },
+  //   ],
+  // },
   // {
   //   id: 4,
   //   title: "Blog",

@@ -35,30 +35,12 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               <Image src={logo || logoWhite} alt="" />
             </Link>
             <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
-              {navbarData.map(({ id, title, link, submenus, type }) =>
+              {navbarData.map(({ id, title, link, submenus }) =>
                 link ? (
                   <li key={id}>
                     <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                       {title}
                     </Link>
-                  </li>
-                ) : type ? (
-                  <li className="submenu mega-menu" key={id}>
-                    <span className={`${isActive(path, submenus || []) ? "active" : ""}`}>
-                      {title} <i className="ti ti-chevron-down"></i>
-                    </span>
-                    <ul className="submenu-dropdown mega-dropdown">
-                      {/* {submenus?.map(({ id, title, link, img }) => (
-                        <li key={id}>
-                          <Link href={link}>
-                            <div className="home-img">
-                              <Image src={img} alt="" />
-                            </div>
-                            <span>{title}</span>
-                          </Link>
-                        </li>
-                      ))} */}
-                    </ul>
                   </li>
                 ) : (
                   <li className="submenu" key={id}>
@@ -79,6 +61,13 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               )}
             </ul>
             <div className="d-flex align-items-center gap-1 gap-sm-2 gap-md-3">
+               <Link href="/contact-us" className="primary-btn">
+                Ստանալ գնառաջարկ <i className="ti ti-arrow-up-right"></i>
+              </Link>
+              
+              <button onClick={() => setMobileMenu(true)} className="toggle-menu">
+                <i className="ti ti-menu-2"></i>
+              </button>
             </div>
           </nav>
         </div>

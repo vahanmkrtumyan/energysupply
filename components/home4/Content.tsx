@@ -44,58 +44,8 @@ const Content = () => {
                   <li>Կնքում ենք պայմանագիր</li>
                   <li>Ապահովում ենք անխափան մատակարարում</li>
                 </ol>
-                <p className="bb-dashed-24">
-                  Reduced Energy Bills: Immediate cost savings with a significant decrease in monthly electricity bills. Increased Property Value: Homes with solar installations typically have higher property values due to their lower operating costs. <br />
-                  <br />
-                  Sustainability: The household now operates on clean, renewable energy, contributing to a healthier environment. Energy Independence: Increased protection against rising energy costs, with less dependence on the traditional power grid.
-                </p>
-                <div className="row g-4 gx-lg-0 align-items-center">
-                  <div className="col-lg-6 d-flex flex-wrap flex-xxl-nowrap gap-2 gap-lg-3">
-                    <h6 className="d-flex align-items-center gap-2 mb-0">
-                      Popular Tag <i className="fs-4 text-primary ti ti-arrow-move-right"></i>
-                    </h6>
-                    <div className="d-flex gap-2">
-                      <a className="tag" href="#">
-                        Solar
-                      </a>
-                      <a className="tag" href="#">
-                        Energy
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 d-flex flex-wrap align-items-center gap-2 justify-content-end">
-                    <h6 className="d-flex align-items-center gap-2 mb-0">
-                      Follow <i className="fs-4 text-primary ti ti-arrow-move-right"></i>
-                    </h6>
-                    <ul className="social-links gap-3 p-0">
-                      <li>
-                        <a href="#">
-                          <i className="ti ti-brand-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="ti ti-brand-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="ti ti-brand-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="ti ti-brand-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="ti ti-brand-twitch"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+               
+              
               </div>
             </div>
             
