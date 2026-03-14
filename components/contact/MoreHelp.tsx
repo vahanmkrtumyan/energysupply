@@ -17,7 +17,6 @@ const MoreHelp = () => {
               <h4 className="mb-3">Զանգահարել</h4>
               <div className="d-flex flex-column gap-1">
                 <a href="tel:9075550101">(907) 555-0101</a>
-                <a href="tel:9075550101">(907) 555-0101</a>
               </div>
             </div>
           </div>
@@ -26,8 +25,7 @@ const MoreHelp = () => {
               <i className="ti ti-mail-opened"></i>
               <h4 className="mb-3">Էլ. փոստ</h4>
               <div className="d-flex flex-column gap-1">
-                <a href="mailto:info@example.com">info@example.com</a>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="mailto:info@energysupply.com">info@energysupply.com</a>
               </div>
             </div>
           </div>
@@ -37,7 +35,6 @@ const MoreHelp = () => {
               <h4 className="mb-3">Հասցե</h4>
               <div className="d-flex flex-column gap-1">
                 <span>Royal Ln. Mesa, New Jersey 45463</span>
-                <span>Thornridge Cir. Shiloh, Hawaii 81063</span>
               </div>
             </div>
           </div>

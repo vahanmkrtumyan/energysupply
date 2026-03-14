@@ -33,14 +33,14 @@ const Footer = () => {
                     <Link href="/blog-grid">Blog</Link>
                   </li>
                   <li>
-                    <Link href="/contact-us">Contact us</Link>
+                    <Link href="/contact-us">Կապ մեզ հետ</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-md-6 col-xl-4">
               <div className="footer-card">
-                <h3 className="text-white pb-3">Contact</h3>
+                <h3 className="text-white pb-3">Կապ</h3>
                 <ul className="contact">
                   <li className="contact-item">
                     <div className="contact-icon">
@@ -48,11 +48,9 @@ const Footer = () => {
                     </div>
                     <div className="d-flex flex-column gap-1">
                       <a href="tel:(808)555-0111" className="text-white">
-                        (808) 555-0111,
+                        (808) 555-0111
                       </a>
-                      <a href="tel:(808)555-0111" className="text-white">
-                        (302) 555-0107
-                      </a>
+                  
                     </div>
                   </li>
                   <li className="contact-item">
@@ -60,11 +58,8 @@ const Footer = () => {
                       <i className="ti ti-mail"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <a href="mailto:info@example.com" className="text-white">
-                        info@example.com,
-                      </a>
-                      <a href="mailto:info@example.com" className="text-white">
-                        info@example.com
+                      <a href="mailto:info@energysupply.com" className="text-white">
+                        info@energysupply.com
                       </a>
                     </div>
                   </li>

@@ -6,10 +6,9 @@ import BrandSlider from "@/components/shared/BrandSlider";
 const page = () => {
   return (
     <>
-      <Banner title="Contact" bgImage="contact-us-hero-bg.webp" />
+      <Banner title="Կապ" bgImage="contact-us-hero-bg.webp" />
       <ContactForm />
       <MoreHelp />
-      <BrandSlider />
     </>
   );
 };
