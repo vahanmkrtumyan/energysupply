@@ -10,6 +10,11 @@ const navbarData = [
     title: "Մեր մասին",
     link: "/#about",
   },
+   {
+    id: 2,
+    title: "Կապ",
+    link: "/contact",
+  },
   // {
   //   id: 3,
   //   title: "Ծառայություններ",
@@ -83,47 +88,47 @@ const navbarData = [
   //     },
   //   ],
   // },
-  {
-    id: 6,
-    title: "Pages",
-    submenus: [
-      {
-        id: 6.1,
-        title: "Projects",
-        link: "/projects/",
-      },
-      {
-        id: 6.2,
-        title: "Project Details",
-        link: "/projects/1/",
-      },
-      {
-        id: 6.3,
-        title: "Contact",
-        link: "/contact/",
-      },
-      {
-        id: 6.4,
-        title: "Faq",
-        link: "/faq/",
-      },
-      {
-        id: 6.5,
-        title: "Sign Up",
-        link: "/sign-up/",
-      },
-      {
-        id: 6.6,
-        title: "Sign In",
-        link: "/sign-in/",
-      },
-      {
-        id: 6.7,
-        title: "404",
-        link: "/404/",
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   title: "Pages",
+  //   submenus: [
+  //     {
+  //       id: 6.1,
+  //       title: "Projects",
+  //       link: "/projects/",
+  //     },
+  //     {
+  //       id: 6.2,
+  //       title: "Project Details",
+  //       link: "/projects/1/",
+  //     },
+  //     {
+  //       id: 6.3,
+  //       title: "Contact",
+  //       link: "/contact/",
+  //     },
+  //     {
+  //       id: 6.4,
+  //       title: "Faq",
+  //       link: "/faq/",
+  //     },
+  //     {
+  //       id: 6.5,
+  //       title: "Sign Up",
+  //       link: "/sign-up/",
+  //     },
+  //     {
+  //       id: 6.6,
+  //       title: "Sign In",
+  //       link: "/sign-in/",
+  //     },
+  //     {
+  //       id: 6.7,
+  //       title: "404",
+  //       link: "/404/",
+  //     },
+  //   ],
+  // },
 ];
 
 export default navbarData;

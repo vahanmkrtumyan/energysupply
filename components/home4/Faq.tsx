@@ -4,7 +4,7 @@ import faqs from "@/public/data/faqData";
 // import company2 from "@/public/images/company-2.png";
 // import company3 from "@/public/images/company-3.png";
 // import company4 from "@/public/images/company-4.png";
-import faqBg4 from "@/public/images/faq-bg-4.webp";
+import faqBg4 from "@/public/images/turbine.webp";
 import Image, { StaticImageData } from "next/image";
 // import { Autoplay } from "swiper/modules";
 // import { Swiper, SwiperSlide } from "swiper/react";

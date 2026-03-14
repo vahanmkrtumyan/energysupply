@@ -35,27 +35,18 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               <Image src={logo || logoWhite} alt="" height={64}/>
             </Link>
             <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
-              {navbarData.map(({ id, title, link, submenus }) =>
+              {navbarData.map(({ id, title, link }, i) =>
                 link ? (
-                  <li key={id}>
+                  <li key={i}>
                     <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                       {title}
                     </Link>
                   </li>
                 ) : (
-                  <li className="submenu" key={id}>
-                    <span className={`${isActive(path, submenus || []) ? "active" : ""}`}>
+                  <li className="submenu" key={i}>
+                    <span className={`${isActive(path,  []) ? "active" : ""}`}>
                       {title} <i className="ti ti-chevron-down"></i>
                     </span>
-                    <ul className="submenu-dropdown">
-                      {submenus?.map(({ id, title, link }) => (
-                        <li key={id}>
-                          <Link className={`${path == link ? "active" : ""}`} href={link}>
-                            {title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
                   </li>
                 )
               )}

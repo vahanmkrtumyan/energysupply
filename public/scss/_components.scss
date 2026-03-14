@@ -51,7 +51,7 @@
 
 .primary-btn {
   @extend .black-btn;
-  padding: 10px 24px;
+  padding: 10px 16px;
   @include screen(md) {
     padding: 14px 32px;
   }
@@ -75,6 +75,8 @@
     border-color: $secondary2;
   }
 }
+
+
 .secondary3-btn {
   @extend .primary-btn;
   background-color: $secondary3;

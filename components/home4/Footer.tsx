@@ -18,12 +18,12 @@ const Footer = () => {
             </div>
             <div className="col-md-6 col-xl-4">
               <div className="footer-card">
-                <h3 className="text-white pb-3">Quik Link</h3>
+                <h3 className="text-white pb-3">Հղումներ</h3>
                 <ul className="contact list-unstyled quick-link">
                   <li>
-                    <Link href="/about-us">About us</Link>
+                    <Link href="/#about">Մեր մասին</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/services">Services</Link>
                   </li>
                   <li>
@@ -31,7 +31,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="/blog-grid">Blog</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact-us">Կապ մեզ հետ</Link>
                   </li>
