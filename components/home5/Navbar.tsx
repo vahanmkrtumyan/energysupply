@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Cart from "../shared/Cart";
-import { isActive } from "../shared/Functions";
 import MobileMenu from "../shared/MobileMenu";
 import Search from "../shared/Search";
 import Sidebar from "../shared/Sidebar";
@@ -36,27 +35,12 @@ const Navbar = () => {
               </Link>
               {/* <!-- menu --> */}
               <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
-                {navbarData.map(({ id, title, link, submenus }) =>
-                  link ? (
+                {navbarData.map(({ id, title, link }) =>
+                 (
                     <li key={id}>
                       <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                         {title}
                       </Link>
-                    </li>
-                  ) : (
-                    <li className="submenu" key={id}>
-                      <span className={`${isActive(path, submenus) ? "active" : ""}`}>
-                        {title} <i className="ti ti-chevron-down"></i>
-                      </span>
-                      <ul className="submenu-dropdown">
-                        {submenus?.map(({ id, title, link }) => (
-                          <li key={id}>
-                            <Link className={`${path == link ? "active" : ""}`} href={link}>
-                              {title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
                     </li>
                   )
                 )}

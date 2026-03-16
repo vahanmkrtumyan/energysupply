@@ -3,9 +3,7 @@ import arrow from "@/public/images/arrow-down.png";
 import bestSolar from "@/public/images/best-solar.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 const BestSolar = () => {
-  const [open, setOpen] = useState(false);
   return (
     <section className="legal-partner">
       <a href="#services" className="scroll-banner d-none d-xxl-flex">
@@ -40,9 +38,7 @@ const BestSolar = () => {
               <div className="reveal reveal--right reveal--overlay">
                 <div className="text-center position-relative">
                   <Image src={bestSolar} className="max-un" alt="" />
-                  <button onClick={() => setOpen(true)} className="play-btn unset popup-youtube">
-                    <i className="ti ti-player-play-filled"></i>
-                  </button>
+               
                 </div>
               </div>
             </div>

@@ -1,24 +1,10 @@
 "use client";
-import counterBg4 from "@/public/images/counter-bg-4.webp";
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import CountUp from "react-countup";
 const Counter = () => {
-  const [open, setOpen] = useState(false);
   return (
     <section className="why-choose-2">
       <div className="container">
-        <div className="row">
-          <div className="col-12 player-container">
-            <div className="reveal reveal--right reveal--overlay">
-              <Image src={counterBg4} className="video-img img-fluid" alt="" />
-              <button onClick={() => setOpen(true)} className="play-btn popup-youtube">
-                <i className="ti ti-player-play-filled"></i>
-              </button>
-            </div>
-          </div>
-        </div>
         <div className="why-counter">
           <div className="row g-3 g-xl-4 align-items-end counter-inner">
             <div className="col-lg-8">

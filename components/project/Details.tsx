@@ -4,12 +4,9 @@ import moreProject2 from "@/public/images/more-project-2.png";
 import moreProject3 from "@/public/images/more-project-3.png";
 import moreProject4 from "@/public/images/more-project-4.png";
 import projectDetails1 from "@/public/images/project-details-1.webp";
-import projectDetailsVideo from "@/public/images/project-details-video.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 const Details = () => {
-  const [open, setOpen] = useState(false);
   return (
     <section className="project-details pt-80 pb-80 z-3 position-relative">
       <div className="container">
@@ -51,14 +48,6 @@ const Details = () => {
                   <br />
                   Smart Monitoring System: A state-of-the-art monitoring system was installed to provide real-time data on energy production, water levels, and turbine efficiency. This system enables city engineers to optimize performance and ensure the long-term stability of the installation.
                 </p>
-                <div className="project-video mb-4">
-                  <div className="reveal reveal--right reveal--overlay overflow-hidden">
-                    <Image src={projectDetailsVideo} className="img-fluid" alt="" />
-                  </div>
-                  <button onClick={() => setOpen(true)} className="play-btn bg-primary popup-youtube">
-                    <i className="ti ti-player-play-filled text-bg2 fs-4"></i>
-                  </button>
-                </div>
                 <h5 className="mb-3">Benefits to the Community:</h5>
                 <p>
                   Lower Energy Costs: By generating electricity locally, the project helps stabilize and lower electricity costs for residents, making energy more affordable. <br />

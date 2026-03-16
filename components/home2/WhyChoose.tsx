@@ -2,10 +2,8 @@
 import whyBg from "@/public/images/why-choose-bg-2.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import CountUp from "react-countup";
 const WhyChoose = () => {
-  const [open, setOpen] = useState(false);
   return (
     <section className="why-choose-2">
       <div className="container">
@@ -13,9 +11,7 @@ const WhyChoose = () => {
           <div className="col-12 player-container">
             <div className="reveal reveal--right reveal--overlay">
               <Image src={whyBg} className="video-img img-fluid" alt="" />
-              <button onClick={() => setOpen(true)} className="play-btn popup-youtube">
-                <i className="ti ti-player-play-filled"></i>
-              </button>
+             
             </div>
           </div>
         </div>

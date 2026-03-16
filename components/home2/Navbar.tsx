@@ -35,84 +35,23 @@ const Navbar = () => {
               <i className="ti ti-phone-call fs-4"></i>(316) 555-0116
             </a>
             <ul className="mb-0 menu align-items-lg-center">
-              {navbarData.slice(0, 3).map(
-                ({ id, title, submenus, type }) =>
-                  submenus &&
-                  (type ? (
-                    <li className="submenu mega-menu" key={id}>
-                      <span className={`${isActive(path, submenus) ? "active" : ""}`}>
-                        {title} <i className="ti ti-chevron-down"></i>
-                      </span>
-                      <ul className="submenu-dropdown mega-dropdown">
-                        {submenus.map(({ id, title, link, img }) => (
-                          <li key={id}>
-                            <Link href={link}>
-                              <div className="home-img">
-                                <Image src={img} alt="" />
-                              </div>
-                              <span>{title}</span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ) : (
-                    <li className="submenu" key={id}>
-                      <span className={`${isActive(path, submenus) ? "active" : ""}`}>
-                        {title} <i className="ti ti-chevron-down"></i>
-                      </span>
-                      <ul className="submenu-dropdown">
-                        {submenus?.map(({ id, title, link }) => (
-                          <li key={id}>
-                            <Link href={link}>{title}</Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))
-              )}
               <li className="d-none d-lg-block px-xxl-5">
                 <Link href="/">
                   <Image src={logo} alt="" />
                 </Link>
               </li>
-              {navbarData.slice(3).map(({ id, title, link, submenus, type }) =>
+              {navbarData.slice(3).map(({ id, title, link }) =>
                 link ? (
                   <li key={id}>
                     <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                       {title}
                     </Link>
                   </li>
-                ) : type ? (
-                  <li className="submenu mega-menu" key={id}>
-                    <span className={`${isActive(path, submenus) ? "active" : ""}`}>
-                      {title} <i className="ti ti-chevron-down"></i>
-                    </span>
-                    <ul className="submenu-dropdown mega-dropdown">
-                      {submenus.map(({ id, title, link, img }) => (
-                        <li key={id}>
-                          <Link href={link}>
-                            <div className="home-img">
-                              <Image src={img} alt="" />
-                            </div>
-                            <span>{title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
                 ) : (
                   <li className="submenu" key={id}>
-                    <span className={`${isActive(path, submenus) ? "active" : ""}`}>
+                    <span className={`${isActive(path) ? "active" : ""}`}>
                       {title} <i className="ti ti-chevron-down"></i>
                     </span>
-                    <ul className="submenu-dropdown">
-                      {submenus?.map(({ id, title, link }) => (
-                        <li key={id}>
-                          <Link href={link}>{title}</Link>
-                        </li>
-                      ))}
-                    </ul>
                   </li>
                 )
               )}

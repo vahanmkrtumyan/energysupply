@@ -4,16 +4,13 @@ import logo from "@/public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Dispatch, SetStateAction, useState } from "react";
-import AnimateHeight from "react-animate-height";
-import { isActive } from "./Functions";
+import { Dispatch, SetStateAction } from "react";
 type Props = {
   mobileMenu: boolean;
   setMobileMenu: Dispatch<SetStateAction<boolean>>;
 };
 
 const MobileMenu = ({ mobileMenu, setMobileMenu }: Props) => {
-  const [open, setOpen] = useState<null | number>(null);
   const path = usePathname();
   return (
     <>
@@ -27,7 +24,7 @@ const MobileMenu = ({ mobileMenu, setMobileMenu }: Props) => {
               <i className="ti ti-x text-white fs-2 close-menu" onClick={() => setMobileMenu(false)}></i>
             </div>
             <ul className="mb-0 menu">
-              {navbarData.map(({ id, title, link }, i) =>
+              {navbarData.map(({ title, link }, i) =>
                  (
                   <li key={i}>
                     <Link href={link} onClick={() => setMobileMenu(false)} className={`d-flex align-items-center ${path == link ? "active" : ""}`}>
