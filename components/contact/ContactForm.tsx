@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     user_name: "",
     contact_number: "",
     message: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -44,8 +47,30 @@ const ContactForm = () => {
       return;
     }
 
-    // Submit form logic here
-    console.log("Form successfully submitted:", formData);
+    setStatus("loading");
+
+    // Replace these with your actual EmailJS credentials
+    const SERVICE_ID = "service_9z3cmwo";
+    const TEMPLATE_ID = "template_ru46oby";
+    const PUBLIC_KEY = "Jy4Mw8NPL7QD61Gte";
+
+    if (formRef.current) {
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+          setStatus("success");
+          setFormData({ user_name: "", contact_number: "", message: "" });
+          // Reset status after a few seconds
+          setTimeout(() => setStatus("idle"), 5000);
+        },
+        (error) => {
+          console.error("Failed to send email:", error.text);
+          setStatus("error");
+          // Reset status after a few seconds
+          setTimeout(() => setStatus("idle"), 5000);
+        },
+      );
+    }
   };
 
   return (
@@ -60,7 +85,7 @@ const ContactForm = () => {
                   Լրացրեք ստորև ներկայացված ձևը և մենք կկապվենք ձեզ հետ հնարավորինս շուտ:
                 </p>
               </div>
-              <form id="contact-form" onSubmit={handleSubmit}>
+              <form id="contact-form" ref={formRef} onSubmit={handleSubmit}>
                 <div className="row g-3 g-lg-4">
                   <div className="col-md-6">
                     <label htmlFor="name">Անվանում</label>
@@ -78,9 +103,23 @@ const ContactForm = () => {
                     <textarea placeholder="Մուտքագրեք ձեր հաղորդագրությունը" name="message" id="message" className="w-100" rows={5} value={formData.message} onChange={handleChange}></textarea>
                     {errors.message && <small className="text-danger mt-1 d-block">{errors.message}</small>}
                   </div>
+
+                  {status === "success" && (
+                    <div className="col-12">
+                      <div className="alert alert-success">Հաղորդագրությունը հաջողությամբ ուղարկվեց:</div>
+                    </div>
+                  )}
+
+                  {status === "error" && (
+                    <div className="col-12">
+                      <div className="alert alert-danger">Ինչ-որ բան սխալ գնաց: Խնդրում ենք փորձել կրկին:</div>
+                    </div>
+                  )}
+
                   <div className="col-12 d-flex justify-content-center pt-lg-3">
-                    <button type="submit" className="primary-btn" id="submit-btn">
-                      Ուղարկել <i className="ti ti-arrow-up-right"></i>
+                    <button type="submit" className="primary-btn" id="submit-btn" disabled={status === "loading"}>
+                      {status === "loading" ? "Ուղարկվում է..." : "Ուղարկել"}
+                      {status === "idle" && <i className="ti ti-arrow-up-right"></i>}
                     </button>
                   </div>
                 </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@yaireo/ui-range": "^2.1.15",
     "bootstrap": "^5.3.3",
     "fslightbox-react": "^1.7.6",
