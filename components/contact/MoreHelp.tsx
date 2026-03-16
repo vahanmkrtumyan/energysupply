@@ -16,7 +16,7 @@ const MoreHelp = () => {
               <i className="ti ti-phone-call"></i>
               <h4 className="mb-3">Զանգահարել</h4>
               <div className="d-flex flex-column gap-1">
-                <a href="tel:9075550101">(907) 555-0101</a>
+                <a href="tel:015800900">015800900</a>
               </div>
             </div>
           </div>
@@ -25,7 +25,7 @@ const MoreHelp = () => {
               <i className="ti ti-mail-opened"></i>
               <h4 className="mb-3">Էլ. փոստ</h4>
               <div className="d-flex flex-column gap-1">
-                <a href="mailto:info@energysupply.com">info@energysupply.com</a>
+                <a href="mailto:info@e-supply.com">info@e-supply.com</a>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const MoreHelp = () => {
               <i className="ti ti-map-pin-pin"></i>
               <h4 className="mb-3">Հասցե</h4>
               <div className="d-flex flex-column gap-1">
-                <span>Royal Ln. Mesa, New Jersey 45463</span>
+                <span>Հրաչյա Քոչար 4</span>
               </div>
             </div>
           </div>

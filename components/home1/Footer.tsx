@@ -87,11 +87,8 @@ const Footer = () => {
                       <i className="ti ti-phone-call"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <a href="tel:(808)555-0111" className="text-white">
-                        (808) 555-0111,
-                      </a>
-                      <a href="tel:(808)555-0111" className="text-white">
-                        (302) 555-0107
+                      <a href="tel:015800900" className="text-white">
+                        015800900
                       </a>
                     </div>
                   </li>
@@ -100,8 +97,8 @@ const Footer = () => {
                       <i className="ti ti-mail"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <a href="mailto:info@energysupply.com" className="text-white">
-                        info@energysupply.com
+                      <a href="mailto:info@e-supply.com" className="text-white">
+                        info@e-supply.com
                       </a>
                     </div>
                   </li>
@@ -110,7 +107,7 @@ const Footer = () => {
                       <i className="ti ti-map-pin-search"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <p className="text-white">2118 Thornridge Cir. Syracuse, Connecticut</p>
+                      <p className="text-white">Հրաչյա Քոչար 4</p>
                     </div>
                   </li>
                 </ul>

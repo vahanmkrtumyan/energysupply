@@ -35,7 +35,7 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               <Image src={logo || logoWhite} alt="" height={64}/>
             </Link>
             <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
-              {navbarData.map(({ id, title, link }, i) =>
+              {navbarData.map(({ title, link }, i) =>
                 link ? (
                   <li key={i}>
                     <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
@@ -52,7 +52,7 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               )}
             </ul>
             <div className="d-flex align-items-center gap-1 gap-sm-2 gap-md-3">
-               <Link href="/contact-us" className="primary-btn">
+               <Link href="/contact#quote" className="primary-btn">
                 Ստանալ գնառաջարկ <i className="ti ti-arrow-up-right"></i>
               </Link>
               
