@@ -97,8 +97,8 @@ const Footer = () => {
                       <i className="ti ti-mail"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <a href="mailto:info@e-supply.com" className="text-white">
-                        info@e-supply.com
+                      <a href="mailto:info@e-supply.am" className="text-white">
+                        info@e-supply.am
                       </a>
                     </div>
                   </li>

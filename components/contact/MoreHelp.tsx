@@ -25,7 +25,7 @@ const MoreHelp = () => {
               <i className="ti ti-mail-opened"></i>
               <h4 className="mb-3">Էլ. փոստ</h4>
               <div className="d-flex flex-column gap-1">
-                <a href="mailto:info@e-supply.com">info@e-supply.com</a>
+                <a href="mailto:info@e-supply.am">info@e-supply.am</a>
               </div>
             </div>
           </div>
