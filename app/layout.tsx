@@ -11,8 +11,8 @@ const interFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Solarox - Solar and Renewable Energy NextJS Bootstrap Template",
-  description: "Solarox - Solar and Renewable Energy NextJS Bootstrap Template",
+  title: "Էներջի սփփլայ",
+  description: "Էներջի սփփլայ ընկերությունը հանդիսանում է էներգետիկայի ոլորտի առաջատար կազմակերպություն, որը տրամադրում է բարձրորակ էներգիայի լուծումներ և ծառայություններ: Մենք ձգտում ենք ապահովել մեր հաճախորդներին կայուն և արդյունավետ էներգիայի աղբյուրներ, որոնք համապատասխանում են ժամանակակից պահանջներին:",
 };
 
 export default function RootLayout({
