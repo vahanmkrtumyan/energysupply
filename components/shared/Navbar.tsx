@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { isActive } from "./Functions";
 import MobileMenu from "./MobileMenu";
 import Search from "./Search";
 import Sidebar from "./Sidebar";
@@ -36,19 +35,13 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
             </Link>
             <ul className="mb-0 menu d-none d-lg-flex mini-scrollbar">
               {navbarData.map(({ title, link }, i) =>
-                link ? (
+                (
                   <li key={i}>
                     <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
                       {title}
                     </Link>
                   </li>
-                ) : (
-                  <li className="submenu" key={i}>
-                    <span className={`${isActive(path,  []) ? "active" : ""}`}>
-                      {title} <i className="ti ti-chevron-down"></i>
-                    </span>
-                  </li>
-                )
+                ) 
               )}
             </ul>
             <div className="d-flex align-items-center gap-1 gap-sm-2 gap-md-3">
