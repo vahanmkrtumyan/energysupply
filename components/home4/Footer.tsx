@@ -33,7 +33,7 @@ const Footer = () => {
                     <Link href="/blog-grid">Blog</Link>
                   </li> */}
                   <li>
-                    <Link href="/contact-us">Կապ մեզ հետ</Link>
+                    <Link href="/contact">Կապ մեզ հետ</Link>
                   </li>
                 </ul>
               </div>
@@ -68,7 +68,7 @@ const Footer = () => {
                       <i className="ti ti-map-pin-search"></i>
                     </div>
                     <div className="d-flex flex-column gap-1">
-                      <p className="text-white">Հրաչյա Քոչար 4</p>
+                      <p className="text-white">Երևան, Հրաչյա Քոչար 4</p>
                     </div>
                   </li>
                 </ul>

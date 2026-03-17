@@ -89,18 +89,18 @@ const ContactForm = () => {
                 <div className="row g-3 g-lg-4">
                   <div className="col-md-6">
                     <label htmlFor="name">Անվանում</label>
-                    <input name="user_name" type="text" id="name" placeholder="Մուտքագրեք ձեր կազմակերպության անունը" value={formData.user_name} onChange={handleChange} />
+                    <input name="user_name" type="text" id="name" placeholder="" value={formData.user_name} onChange={handleChange} />
                     {errors.user_name && <small className="text-danger mt-1 d-block">{errors.user_name}</small>}
                   </div>
                   <div className="col-md-6">
                     <label htmlFor="phone">Հեռախոսահամար</label>
-                    <input name="contact_number" type="number" id="phone" placeholder="Մուտքագրեք ձեր հեռախոսահամարը" value={formData.contact_number} onChange={handleChange} />
+                    <input name="contact_number" type="number" id="phone" placeholder="" value={formData.contact_number} onChange={handleChange} />
                     {errors.contact_number && <small className="text-danger mt-1 d-block">{errors.contact_number}</small>}
                   </div>
 
                   <div className="col-12">
                     <label htmlFor="message">Հաղորդագրություն</label>
-                    <textarea placeholder="Մուտքագրեք ձեր հաղորդագրությունը" name="message" id="message" className="w-100" rows={5} value={formData.message} onChange={handleChange}></textarea>
+                    <textarea placeholder="" name="message" id="message" className="w-100" rows={5} value={formData.message} onChange={handleChange}></textarea>
                     {errors.message && <small className="text-danger mt-1 d-block">{errors.message}</small>}
                   </div>
 

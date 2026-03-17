@@ -24,9 +24,7 @@ const Faq = ({ faqImg = faqBg4 }: { faqImg?: StaticImageData | string }) => {
               <div className="col-xxl-9">
                 <div className="faq-content no-cta">
                   <h2 className="fade_up_anim">Մեր բիզնես մոդելը</h2>
-                  <p className="pb-lg-2 mb-4 fade_up_anim" data-delay=".3">
-                    Have questions about our water energy solutions? We&apos;ve gathered the most frequently asked questions to help.
-                  </p>
+              
                   <div className="accordion d-flex flex-column gap-3 gap-xxl-4" id="home4Faq">
                     {faqs.slice(0, 5).map((faq) => (
                       <FaqItem key={faq.id} {...faq} cls="bg1" databsParent="#home4Faq" />
