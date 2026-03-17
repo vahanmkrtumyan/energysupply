@@ -37,7 +37,7 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
               {navbarData.map(({ title, link }, i) =>
                 (
                   <li key={i}>
-                    <Link className={`d-flex align-items-center ${path == link ? "active" : ""}`} href={link}>
+                    <Link className="d-flex align-items-center" href={link}>
                       {title}
                     </Link>
                   </li>
