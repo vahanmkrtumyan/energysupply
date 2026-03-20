@@ -35,6 +35,9 @@ const Footer = () => {
                   <li>
                     <Link href="/contact">Կապ մեզ հետ</Link>
                   </li>
+                    <li>
+                    <Link href="/#agreements">Փաստաթղթեր</Link>
+                  </li>
                 </ul>
               </div>
             </div>
