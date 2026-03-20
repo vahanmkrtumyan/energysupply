@@ -5,6 +5,7 @@ import HashScrollHandler from "@/components/shared/HashScrollHandler";
 import "@/public/scss/main.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -28,7 +29,9 @@ export default function RootLayout({
           {/* <Loader /> */}
           <Animations />
           <GotoTop />
-          <HashScrollHandler />
+          <Suspense fallback={null}>
+            <HashScrollHandler />
+          </Suspense>
           {children}
         </Bootstrap>
       </body>
