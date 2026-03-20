@@ -1,6 +1,7 @@
 import Animations from "@/components/animations/Animations";
 import Bootstrap from "@/components/shared/Bootstrap";
 import GotoTop from "@/components/shared/GotoTop";
+import HashScrollHandler from "@/components/shared/HashScrollHandler";
 import "@/public/scss/main.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -27,6 +28,7 @@ export default function RootLayout({
           {/* <Loader /> */}
           <Animations />
           <GotoTop />
+          <HashScrollHandler />
           {children}
         </Bootstrap>
       </body>

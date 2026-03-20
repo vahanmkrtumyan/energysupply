@@ -6,6 +6,7 @@ import Footer from "@/components/home4/Footer";
 import Position from "@/components/home4/Position";
 import Navbar from "@/components/shared/Navbar";
 import Content from "@/components/home4/Content";
+import Agreements from "@/components/home4/Agreements";
 
 const HomeFour = () => {
   return (
@@ -22,6 +23,7 @@ const HomeFour = () => {
       {/* <Testimonial /> */}
       {/* <Specialist /> */}
       <Faq />
+      <Agreements />
       {/* <News /> */}
       <Footer />
     </>

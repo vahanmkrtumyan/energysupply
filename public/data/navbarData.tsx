@@ -11,9 +11,14 @@ const navbarData = [
     link: "/#about",
   },
    {
-    id: 2,
+    id: 3,
     title: "Կապ",
     link: "/contact",
+  },
+  {
+    id: 4,
+    title: "Փաստաթղթեր",
+    link: "/#agreements",
   },
   // {
   //   id: 3,

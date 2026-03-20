@@ -3,7 +3,6 @@ import navbarData from "@/public/data/navbarData";
 import logoWhite from "@/public/images/logo.png";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import Search from "./Search";
@@ -15,7 +14,6 @@ const Navbar = ({ cls, logo }: { cls?: string; logo?: StaticImageData | string }
   const [search, setSearch] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  const path = usePathname();
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 150) {
