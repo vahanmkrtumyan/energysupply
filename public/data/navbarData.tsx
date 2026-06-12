@@ -20,6 +20,11 @@ const navbarData = [
     title: "Փաստաթղթեր",
     link: "/#agreements",
   },
+  {
+    id: 5,
+    title: "Ֆինանսական հաշվետվություններ",
+    link: "/financial-reports",
+  },
   // {
   //   id: 3,
   //   title: "Ծառայություններ",
